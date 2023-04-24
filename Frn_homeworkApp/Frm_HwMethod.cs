@@ -202,9 +202,66 @@ namespace Frn_homeworkApp
         }
         private void btn99_Click(object sender, EventArgs e)
         {
-           
+            int[,] arr = new int[9,9];
+            string result = "";
+            for ( int i = 1; i < 9; i++)
+            
+                {
+                    for (int x = 2; x <= 9; x++)
+                    {
+                        result += x + " x " + i + " = " + x * i + " || ";
+                    }
+                    result += "\n";
+                }
+                label1.Text = result;            
         }
 
-       
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int[] arr = new int[6];
+            string result = "樂透號碼 : \n";
+            Random rd = new Random();
+            for (int i = 0; i < arr.Length; i++)
+            {
+                arr[i] = rd.Next(1, 49);
+                result += arr[i] + "   ";
+            }
+            label1.Text = result;
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int number = 100;
+            int[] arr = new int[8];
+            string result = "結果 : \n";
+            int i = 1;
+            while (number > 0)
+            {
+                arr[i] = number % 2;
+                number /= 2;
+                i++;
+            }
+            for (int x = arr.Length - 1; x >= 1; x--)
+            {
+                result += arr[x];
+            }
+          label1.Text = result;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (!(int.TryParse(txtRow.Text, out int Length)))
+            {
+                MessageBox.Show("請輸入數值");
+                return;
+            }
+            string[] arr = new string[Length];
+
+            for (int i = 0; i < Length; i++)
+            {
+                arr[i] = new string('*', i + 1);
+            }
+            label1.Text = string.Join(Environment.NewLine, arr);
+        }
     }
 }

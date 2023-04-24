@@ -44,13 +44,17 @@
             this.btn99 = new System.Windows.Forms.Button();
             this.btnLongname = new System.Windows.Forms.Button();
             this.btnCorc = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.txtRow = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtOddorEven
             // 
             this.txtOddorEven.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtOddorEven.Location = new System.Drawing.Point(29, 24);
-            this.txtOddorEven.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtOddorEven.Margin = new System.Windows.Forms.Padding(2);
             this.txtOddorEven.Name = "txtOddorEven";
             this.txtOddorEven.Size = new System.Drawing.Size(76, 22);
             this.txtOddorEven.TabIndex = 0;
@@ -60,7 +64,7 @@
             // 
             this.btnOddorEven.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnOddorEven.Location = new System.Drawing.Point(29, 49);
-            this.btnOddorEven.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnOddorEven.Margin = new System.Windows.Forms.Padding(2);
             this.btnOddorEven.Name = "btnOddorEven";
             this.btnOddorEven.Size = new System.Drawing.Size(75, 42);
             this.btnOddorEven.TabIndex = 1;
@@ -75,15 +79,14 @@
             this.label1.Location = new System.Drawing.Point(27, 287);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(55, 14);
+            this.label1.Size = new System.Drawing.Size(0, 14);
             this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
             // 
             // btncleanlab1
             // 
             this.btncleanlab1.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btncleanlab1.Location = new System.Drawing.Point(29, 240);
-            this.btncleanlab1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btncleanlab1.Margin = new System.Windows.Forms.Padding(2);
             this.btncleanlab1.Name = "btncleanlab1";
             this.btncleanlab1.Size = new System.Drawing.Size(75, 26);
             this.btncleanlab1.TabIndex = 3;
@@ -95,7 +98,7 @@
             // 
             this.btnArrayminmax.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnArrayminmax.Location = new System.Drawing.Point(120, 49);
-            this.btnArrayminmax.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnArrayminmax.Margin = new System.Windows.Forms.Padding(2);
             this.btnArrayminmax.Name = "btnArrayminmax";
             this.btnArrayminmax.Size = new System.Drawing.Size(182, 21);
             this.btnArrayminmax.TabIndex = 4;
@@ -107,7 +110,7 @@
             // 
             this.btnsum.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnsum.Location = new System.Drawing.Point(120, 73);
-            this.btnsum.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnsum.Margin = new System.Windows.Forms.Padding(2);
             this.btnsum.Name = "btnsum";
             this.btnsum.Size = new System.Drawing.Size(182, 21);
             this.btnsum.TabIndex = 5;
@@ -119,7 +122,7 @@
             // 
             this.btnmax.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnmax.Location = new System.Drawing.Point(120, 97);
-            this.btnmax.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnmax.Margin = new System.Windows.Forms.Padding(2);
             this.btnmax.Name = "btnmax";
             this.btnmax.Size = new System.Drawing.Size(182, 21);
             this.btnmax.TabIndex = 6;
@@ -131,7 +134,7 @@
             // 
             this.btnmin.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnmin.Location = new System.Drawing.Point(120, 121);
-            this.btnmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnmin.Margin = new System.Windows.Forms.Padding(2);
             this.btnmin.Name = "btnmin";
             this.btnmin.Size = new System.Drawing.Size(182, 21);
             this.btnmin.TabIndex = 7;
@@ -143,7 +146,7 @@
             // 
             this.btnoddeven.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnoddeven.Location = new System.Drawing.Point(120, 145);
-            this.btnoddeven.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnoddeven.Margin = new System.Windows.Forms.Padding(2);
             this.btnoddeven.Name = "btnoddeven";
             this.btnoddeven.Size = new System.Drawing.Size(182, 21);
             this.btnoddeven.TabIndex = 8;
@@ -155,7 +158,7 @@
             // 
             this.btnswap.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btnswap.Location = new System.Drawing.Point(327, 49);
-            this.btnswap.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnswap.Margin = new System.Windows.Forms.Padding(2);
             this.btnswap.Name = "btnswap";
             this.btnswap.Size = new System.Drawing.Size(182, 21);
             this.btnswap.TabIndex = 9;
@@ -167,7 +170,7 @@
             // 
             this.btn1010out1.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btn1010out1.Location = new System.Drawing.Point(327, 73);
-            this.btn1010out1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn1010out1.Margin = new System.Windows.Forms.Padding(2);
             this.btn1010out1.Name = "btn1010out1";
             this.btn1010out1.Size = new System.Drawing.Size(182, 21);
             this.btn1010out1.TabIndex = 10;
@@ -179,7 +182,7 @@
             // 
             this.btn1010out0.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btn1010out0.Location = new System.Drawing.Point(327, 97);
-            this.btn1010out0.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn1010out0.Margin = new System.Windows.Forms.Padding(2);
             this.btn1010out0.Name = "btn1010out0";
             this.btn1010out0.Size = new System.Drawing.Size(182, 21);
             this.btn1010out0.TabIndex = 11;
@@ -191,7 +194,7 @@
             // 
             this.btn10101.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btn10101.Location = new System.Drawing.Point(327, 121);
-            this.btn10101.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn10101.Margin = new System.Windows.Forms.Padding(2);
             this.btn10101.Name = "btn10101";
             this.btn10101.Size = new System.Drawing.Size(182, 45);
             this.btn10101.TabIndex = 12;
@@ -203,7 +206,7 @@
             // 
             this.btn99.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.btn99.Location = new System.Drawing.Point(459, 245);
-            this.btn99.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btn99.Margin = new System.Windows.Forms.Padding(2);
             this.btn99.Name = "btn99";
             this.btn99.Size = new System.Drawing.Size(97, 21);
             this.btn99.TabIndex = 13;
@@ -235,11 +238,61 @@
             this.btnCorc.UseVisualStyleBackColor = true;
             this.btnCorc.Click += new System.EventHandler(this.btnCorc_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button1.Location = new System.Drawing.Point(459, 270);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(97, 21);
+            this.button1.TabIndex = 16;
+            this.button1.Text = "樂透";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button2.Location = new System.Drawing.Point(459, 295);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(97, 21);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "100的二進位是";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button3
+            // 
+            this.button3.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.button3.Location = new System.Drawing.Point(459, 320);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(97, 21);
+            this.button3.TabIndex = 18;
+            this.button3.Text = "直角聖誕樹";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // txtRow
+            // 
+            this.txtRow.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.txtRow.Location = new System.Drawing.Point(574, 319);
+            this.txtRow.Margin = new System.Windows.Forms.Padding(2);
+            this.txtRow.Name = "txtRow";
+            this.txtRow.Size = new System.Drawing.Size(76, 22);
+            this.txtRow.TabIndex = 19;
+            this.txtRow.Text = "0";
+            // 
             // Frm_HwMethod
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(752, 464);
+            this.Controls.Add(this.txtRow);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btnCorc);
             this.Controls.Add(this.btnLongname);
             this.Controls.Add(this.btn99);
@@ -256,7 +309,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnOddorEven);
             this.Controls.Add(this.txtOddorEven);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_HwMethod";
             this.Text = "Frm_HwMethod";
             this.ResumeLayout(false);
@@ -282,5 +335,9 @@
         private System.Windows.Forms.Button btn99;
         private System.Windows.Forms.Button btnLongname;
         private System.Windows.Forms.Button btnCorc;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.TextBox txtRow;
     }
 }

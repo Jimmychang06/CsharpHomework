@@ -170,14 +170,14 @@ namespace Frn_homeworkApp
             int[,] matrix = new int[10, 10];
 
             //// 初始化矩陣
-            //for (int i = 0; i < 10; i++)
-            //{
-            //    for (int j = 0; j < 10; j++)
-            //    {
-            //        matrix[i, j] = (i + j) % 2 == 0 ? 1 : 0;
-            //    }
-            //}
-            //label1.Text = "";
+            for (int i = 0; i < 10; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    matrix[i, j] = (i + j) % 2 == 0 ? 1 : 0;
+                }
+            }
+            label1.Text = "";
             for (int i = 0; i < 10; i++)
             {
                 for (int j = 0; j < 10; j++)

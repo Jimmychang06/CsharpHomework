@@ -184,7 +184,7 @@ namespace Frn_homeworkApp
                 {
                     label1.Text += matrix[i, j].ToString() + " ";
                 }
-                label1.Text += Environment.NewLine;               
+                label1.Text += Environment.NewLine;
             }
         }
         private void btnLongname_Click(object sender, EventArgs e)

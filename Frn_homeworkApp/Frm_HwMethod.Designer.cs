@@ -205,7 +205,7 @@
             // btn99
             // 
             this.btn99.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btn99.Location = new System.Drawing.Point(459, 245);
+            this.btn99.Location = new System.Drawing.Point(527, 173);
             this.btn99.Margin = new System.Windows.Forms.Padding(2);
             this.btn99.Name = "btn99";
             this.btn99.Size = new System.Drawing.Size(97, 21);
@@ -241,43 +241,40 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button1.Location = new System.Drawing.Point(459, 270);
+            this.button1.Location = new System.Drawing.Point(527, 198);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(97, 21);
             this.button1.TabIndex = 16;
             this.button1.Text = "樂透";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button2.Location = new System.Drawing.Point(459, 295);
+            this.button2.Location = new System.Drawing.Point(527, 223);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(97, 21);
             this.button2.TabIndex = 17;
             this.button2.Text = "100的二進位是";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.button3.Location = new System.Drawing.Point(459, 320);
+            this.button3.Location = new System.Drawing.Point(527, 248);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(97, 21);
             this.button3.TabIndex = 18;
             this.button3.Text = "直角聖誕樹";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // txtRow
             // 
             this.txtRow.Font = new System.Drawing.Font("標楷體", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.txtRow.Location = new System.Drawing.Point(574, 319);
+            this.txtRow.Location = new System.Drawing.Point(628, 248);
             this.txtRow.Margin = new System.Windows.Forms.Padding(2);
             this.txtRow.Name = "txtRow";
             this.txtRow.Size = new System.Drawing.Size(76, 22);

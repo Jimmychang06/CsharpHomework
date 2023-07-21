@@ -18,6 +18,7 @@ namespace Frn_homeworkApp
             InitializeComponent();
         }
 
+
         private void btnNotePad_Click(object sender, EventArgs e)
         {
           Frm_HwNotepad Note = new Frm_HwNotepad();
@@ -29,6 +30,7 @@ namespace Frn_homeworkApp
         {
             Frm_Hwhello hello = new Frm_Hwhello ();            
             hello.TopLevel = false;
+            splitContainer2.Panel2.Controls.Clear();
             splitContainer2.Panel2.Controls.Add(hello);
             hello.Show();
         }
@@ -37,7 +39,9 @@ namespace Frn_homeworkApp
         {
             Frm_Hwloan loan = new Frm_Hwloan();
             loan.TopLevel = false;
+            splitContainer2.Panel2.Controls.Clear();
             splitContainer2.Panel2.Controls.Add(loan);
+            
             loan.Show();
         }
 
@@ -45,6 +49,7 @@ namespace Frn_homeworkApp
         {
             Frm_Hwpos Pos = new Frm_Hwpos();
             Pos.TopLevel = false;
+            splitContainer2.Panel2.Controls.Clear();
             splitContainer2.Panel2.Controls.Add(Pos);
             Pos.Show();
         }
@@ -53,6 +58,7 @@ namespace Frn_homeworkApp
         {
             Frm_HwStudentStruct students = new Frm_HwStudentStruct();
             students.TopLevel = false;
+            splitContainer2.Panel2.Controls.Clear();
             splitContainer2.Panel2.Controls.Add(students);
             students.Show();
         }
@@ -61,6 +67,7 @@ namespace Frn_homeworkApp
         {
             Frm_HwClac clac = new Frm_HwClac();
             clac.TopLevel = false;
+            splitContainer2.Panel2.Controls.Clear();
             splitContainer2.Panel2.Controls.Add(clac);
             clac.Show();
         }
@@ -69,6 +76,7 @@ namespace Frn_homeworkApp
         {
             Frm_HwPicture_View pic = new Frm_HwPicture_View();
             pic.TopLevel = false;
+            splitContainer2.Panel2.Controls.Clear();
             splitContainer2.Panel2.Controls.Add(pic);
             pic.Show();
         }
@@ -83,7 +91,8 @@ namespace Frn_homeworkApp
         private void btnOXgame_Click(object sender, EventArgs e)
         {
             Frm_HwOXgame game = new Frm_HwOXgame();
-            game.TopLevel = false;
+            game.TopLevel = false; 
+            splitContainer2.Panel2.Controls.Clear();
             splitContainer2.Panel2.Controls.Add(game);
             game.Show();
         }
@@ -92,6 +101,7 @@ namespace Frn_homeworkApp
         {
             Frm_Hw小畫家 draw = new Frm_Hw小畫家();
             draw.TopLevel = false;
+            splitContainer2.Panel2.Controls.Clear();
             splitContainer2.Panel2.Controls.Add(draw);
             draw.Show();
         }
@@ -100,6 +110,8 @@ namespace Frn_homeworkApp
         {
             Frm_HwAlarm alarm = new Frm_HwAlarm();
             alarm.TopLevel = false;
+            splitContainer2.Panel2.Controls.Clear();
+
             splitContainer2.Panel2.Controls.Add(alarm);
             alarm.Show();
         }
@@ -108,6 +120,8 @@ namespace Frn_homeworkApp
         {
             Frm_HwMethod method = new Frm_HwMethod();
             method.TopLevel = false;
+            splitContainer2.Panel2.Controls.Clear();
+
             splitContainer2.Panel2.Controls.Add(method);
             method.Show();
         }
@@ -115,7 +129,9 @@ namespace Frn_homeworkApp
         private void btnGuess_Click(object sender, EventArgs e)
         {
             Frm_HwGuess guess = new Frm_HwGuess();
-            guess.TopLevel = false;
+            guess.TopLevel = false; 
+            splitContainer2.Panel2.Controls.Clear();
+
             splitContainer2.Panel2.Controls.Add(guess);
             guess.Show();
         }

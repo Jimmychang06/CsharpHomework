@@ -25,14 +25,14 @@ namespace Frn_homeworkApp
             {
                 MessageBox.Show("請輸入數值");
                 return;
-            }           
+            }
             if (oddoreven % 2 == 0)
             {
                 label1.Text = ($"{oddoreven} 是偶數");
             }
             else
             {
-                label1.Text=($"{oddoreven} 是奇數");
+                label1.Text = ($"{oddoreven} 是奇數");
             }
         }
 
@@ -46,17 +46,17 @@ namespace Frn_homeworkApp
             int[] arr = { 1, 5, 6, 8, 7, 97, 54, 887, 65, 578 };
             int max = arr.Max();
             int min = arr.Min();
-            
-            label1.Text ="{ 1, 5, 6, 8, 7, 97, 54, 887, 65, 578 }"+
+
+            label1.Text = "{ 1, 5, 6, 8, 7, 97, 54, 887, 65, 578 }" +
             "\nMax: " + max.ToString() + "  Min: " + min.ToString();
-            
+
         }
 
         private void btnsum_Click(object sender, EventArgs e)
         {
-            int[] arr = { 1, 5, 6, 8, 7, 97, 54, 887, 65, 578 };            
+            int[] arr = { 1, 5, 6, 8, 7, 97, 54, 887, 65, 578 };
             int sum = arr.Sum();
-           
+
             label1.Text = "{ 1, 5, 6, 8, 7, 97, 54, 887, 65, 578 }" + "\nSum: " + sum.ToString();
         }
 
@@ -64,7 +64,7 @@ namespace Frn_homeworkApp
         {
             int[] arr = { 1, 5, 6, 8, 7, 97, 54, 887, 65, 578 };
             int max = arr.Max();
-          
+
             label1.Text = "{ 1, 5, 6, 8, 7, 97, 54, 887, 65, 578 }" +
             "\nMax: " + max.ToString();
         }
@@ -77,7 +77,7 @@ namespace Frn_homeworkApp
             label1.Text = "{ 1, 5, 6, 8, 7, 97, 54, 887, 65, 578 }" +
             " \nMin: " + min.ToString();
         }
-        
+
         private void btnoddeven_Click(object sender, EventArgs e)
         {
             int[] arr = { 1, 5, 6, 8, 7, 97, 54, 887, 65, 578 };
@@ -162,7 +162,7 @@ namespace Frn_homeworkApp
                     label1.Text += matrix[i, j].ToString() + " ";
                 }
                 label1.Text += Environment.NewLine;
-            }           
+            }
         }
 
         private void btn10101_Click(object sender, EventArgs e)
@@ -190,8 +190,8 @@ namespace Frn_homeworkApp
         private void btnLongname_Click(object sender, EventArgs e)
         {
             string[] str = { "mother張", "emma", "蕭迪克", "J40", "Candy", "Cindy", "Coconat", "motherfacker" };
-            string Longname = str.OrderByDescending(s=>s.Length).First();
-            label1.Text = $" mother張, emma, 蕭迪克, J40, Candy, Cindy, Coconat, motherfacker \n陣列中名字最長的是:{Longname}" ;
+            string Longname = str.OrderByDescending(s => s.Length).First();
+            label1.Text = $" mother張, emma, 蕭迪克, J40, Candy, Cindy, Coconat, motherfacker \n陣列中名字最長的是:{Longname}";
         }
 
         private void btnCorc_Click(object sender, EventArgs e)
@@ -202,66 +202,23 @@ namespace Frn_homeworkApp
         }
         private void btn99_Click(object sender, EventArgs e)
         {
-            int[,] arr = new int[9,9];
+            int[,] arr = new int[10, 10];
             string result = "";
-            for ( int i = 1; i < 9; i++)
-            
-                {
-                    for (int x = 2; x <= 9; x++)
-                    {
-                        result += x + " x " + i + " = " + x * i + " || ";
-                    }
-                    result += "\n";
-                }
-                label1.Text = result;            
-        }
+            for (int i = 1; i < 10; i++)
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            int[] arr = new int[6];
-            string result = "樂透號碼 : \n";
-            Random rd = new Random();
-            for (int i = 0; i < arr.Length; i++)
             {
-                arr[i] = rd.Next(1, 49);
-                result += arr[i] + "   ";
+                for (int x = 1; x < 10; x++)
+                {
+                    result += x + " x " + i + " = " + x * i + " || ";
+                }
+                result += "\n";
             }
             label1.Text = result;
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            int number = 100;
-            int[] arr = new int[8];
-            string result = "結果 : \n";
-            int i = 1;
-            while (number > 0)
-            {
-                arr[i] = number % 2;
-                number /= 2;
-                i++;
-            }
-            for (int x = arr.Length - 1; x >= 1; x--)
-            {
-                result += arr[x];
-            }
-          label1.Text = result;
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            if (!(int.TryParse(txtRow.Text, out int Length)))
-            {
-                MessageBox.Show("請輸入數值");
-                return;
-            }
-            string[] arr = new string[Length];
-
-            for (int i = 0; i < Length; i++)
-            {
-                arr[i] = new string('*', i + 1);
-            }
-            label1.Text = string.Join(Environment.NewLine, arr);
-        }
     }
 }
+      
+         
+
+           
+        
